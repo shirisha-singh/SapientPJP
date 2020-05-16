@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+	tools {
+	        maven 'MAVEN' 
+	    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn -f /Users/shirishasingh/Desktop/sapient_courses/udemy_courses/assignment-1/assignment-example clean install' 
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'mvn -f /Users/shirishasingh/Desktop/sapient_courses/udemy_courses/assignment-1/assignment-example test'
+            }
+        }
+        
+		stage('Invoking .jar')
+		{
+			steps {
+				sh 'jar -tf /Users/shirishasingh/Desktop/sapient_courses/udemy_courses/assignment-1/assignment-example/target/*.jar' 
+			}
+		}
+    }
+}
