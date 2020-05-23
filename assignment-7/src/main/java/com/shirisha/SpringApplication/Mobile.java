@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 public class Mobile {
 
 	@Autowired
-	ApplicationContext factoryScreen = new ClassPathXmlApplicationContext("screen.xml");
+	ApplicationContext factoryScreen = new ClassPathXmlApplicationContext("screenContext.xml");
 	
 	@Autowired
-	ApplicationContext factoryCamera = new ClassPathXmlApplicationContext("camera.xml");
+	ApplicationContext factoryCamera = new ClassPathXmlApplicationContext("cameraContext.xml");
 	
 	@Autowired
-	ApplicationContext factorySpeaker = new ClassPathXmlApplicationContext("speaker.xml");
+	ApplicationContext factorySpeaker = new ClassPathXmlApplicationContext("speakerContext.xml");
 	
 	private Screen screen = (Screen)factoryScreen.getBean("screen");
 	private Camera camera = (Camera)factoryCamera.getBean("camera");

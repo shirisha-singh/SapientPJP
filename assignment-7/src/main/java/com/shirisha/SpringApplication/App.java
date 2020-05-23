@@ -7,7 +7,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext factory = new ClassPathXmlApplicationContext("mobile.xml");
+		ApplicationContext factory = new ClassPathXmlApplicationContext("mobileContext.xml");
 		
 		Mobile mobile = (Mobile)factory.getBean("mobile");
 		mobile.setScreen(200, 200);
