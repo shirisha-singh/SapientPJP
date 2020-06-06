@@ -13,7 +13,7 @@ Considering that you are asked to create servlets for below end points:
 Eventually over course of time the company needs many such servlets due to this maintaining multiple servlets become difficult, create a single servlets which has the signature given below 
 
 
-'''
+```
 <servlet>
  	<servlet-name>hi</servlet-name>
 	<servlet-class>com.something.ClassName</servlet-class>
@@ -23,5 +23,5 @@ Eventually over course of time the company needs many such servlets due to this 
 	 <servlet-name>hi</servlet-name>
 	 <url-pattern>/*</url-pattern> 
 </servlet-mapping>
-'''
+```
 You are asked to create a single servlet which will handle all the scenarios, use either switch case or if condition for routing. 
