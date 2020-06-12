@@ -1,2 +1,2 @@
 # SAPIENT PJP
-Weekly Assignments would be added in the respective branches
+Weekly Assignments have been added in the respective branches.
